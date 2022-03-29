@@ -125,6 +125,8 @@ function BoardContent(props) {
      setBoard(newBoard);
   }
 
+ 
+
   return (
     <div className="board-content">
       <Container
@@ -173,10 +175,7 @@ function BoardContent(props) {
               <Button variant="success" size="sm" onClick={addNewColumn}>
                 Add column
               </Button>
-              <span
-                className="cancel-new-column"
-                onClick={toggleOpenNewColumnForm}
-              >
+              <span className="cancel-icon" onClick={toggleOpenNewColumnForm}>
                 <i className="fa fa-trash icon" />
               </span>
             </Col>
